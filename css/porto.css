@@ -1,0 +1,412 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-description {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 5rem 1rem;
+    background-color: #ffffff;
+    text-align: center; /* Center align text */
+}
+
+.about-text {
+    max-width: 800px; /* Optional: Limits the width of the paragraph for readability */
+    margin: 0 auto; /* Center align paragraph */
+    line-height: 1.6; /* Improve readability with line height */
+}
+
+/* Services Section */
+.services-section {
+    padding: 5rem 1rem;
+    background-color: #e9ecef;
+}
+
+.services-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-item {
+    flex: 0 1 calc(33.333% - 1rem);
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+.service-item p {
+    color: #6c757d;
+}
+
+/* Vision & Mission Section */
+.vision-mission-section {
+    padding: 5rem 1rem;
+    background-color: #ffffff;
+}
+
+/* Competitive Advantages Section */
+.competitive-advantages-section {
+    padding: 5rem 1rem;
+    background-color: #e9ecef;
+}
+
+.advantages-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantage-item {
+    flex: 0 1 calc(33.333% - 1rem);
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.advantage-item:hover {
+    transform: translateY(-10px);
+}
+
+.advantage-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+.advantage-item p {
+    color: #6c757d;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 5rem 1rem;
+    background-color: #ffffff;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    flex: 0 1 calc(33.333% - 1rem);
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #007BFF;
+}
+
+.portfolio-item p {
+    color: #6c757d;
+}
+
+/* Clients Section */
+.clients-section {
+    padding: 5rem 1rem;
+    background-color: #e9ecef;
+}
+
+.clients-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.client-item {
+    flex: 0 1 calc(33.333% - 1rem);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.client-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Team Section */
+.team-section {
+    padding: 5rem 1rem;
+    background-color: #ffffff;
+}
+
+.team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    flex: 0 1 calc(33.333% - 1rem);
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #007BFF;
+}
+
+.team-member p {
+    color: #6c757d;
+}
+
+/* Technology & Methodology Section */
+.technology-section {
+    padding: 5rem 1rem;
+    background-color: #e9ecef;
+}
+
+/* Certifications & Awards Section */
+.certifications-awards {
+    padding: 5rem 1rem;
+    background-color: #ffffff;
+}
+
+.awards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.award-item {
+    flex: 0 1 calc(33.333% - 1rem);
+    margin-bottom: 2rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.award-item:hover {
+    transform: translateY(-10px);
+}
+
+.award-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.award-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #007BFF;
+}
+
+.award-item p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Subtitle Style */
+.section-subtitle {
+    text-align: center; 
+    font-size: 1.125rem; 
+    color: #333333; 
+    margin: 0 auto 2rem; 
+    max-width: 800px; 
+}
+
+
+/* Footer Styles */
+.footer {
+    padding: 2rem 1rem;
+    background-color: #007BFF;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .service-item, .advantage-item, .portfolio-item, .client-item, .team-member, .award-item {
+        flex: 0 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .service-item, .advantage-item, .portfolio-item, .client-item, .team-member, .award-item {
+        flex: 0 1 100%;
+    }
+}
+
+/* General styles for the team section */
+.team-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.team-section .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.team-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    flex: 1 1 200px; /* Allows the items to grow and shrink, with a base width of 200px */
+    max-width: 250px; /* Maximum width for each team member block */
+}
+
+.team-member img {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures the image covers the specified dimensions without distortion */
+    border-radius: 50%; /* Optional: Makes the images circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Styles for the Back to Home button */
+.back-to-home {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    background-color: #007bff; /* Button background color */
+    color: #ffffff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1.5rem; /* Font size for the icon */
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1000; /* Ensure the button is on top of other elements */
+}
+
+.back-to-home:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+
+
+
