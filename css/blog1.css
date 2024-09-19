@@ -1,62 +1,56 @@
-/* blog.css */
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #e0e7f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .container {
-    max-width: 960px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px;
+    line-height: 1.6;
 }
 
 h1 {
-    text-align: center;
-    color: #007BFF;
     font-size: 2.5rem;
+    text-align: center;
+    color: #333;
     margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 p {
     font-size: 1.1rem;
-    margin-bottom: 20px;
     color: #555;
-    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
-h2 {
-    color: #333;
-    font-size: 1.75rem;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    position: relative;
-}
-
-h2::before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 4px;
-    background-color: #007BFF;
-    bottom: -10px;
-    left: 0;
-    border-radius: 2px;
-}
-
-h2:hover {
-    color: #007BFF;
+.container p {
+    text-align: justify;
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 15px;
+        padding: 20px;
     }
 
     h1 {
@@ -72,20 +66,27 @@ h2:hover {
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 10px;
-    }
+ /* Styling untuk button */
+ .btn-kembali {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
 
-    h1 {
-        font-size: 1.8rem;
-    }
+.btn-kembali:hover {
+    background-color: #003d80;
+}
 
-    h2 {
-        font-size: 1.3rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
+/* Center alignment */
+.btn-container {
+    text-align: center;
+    margin-top: 40px;
 }

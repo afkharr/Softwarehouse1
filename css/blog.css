@@ -1,101 +1,97 @@
-/* blog.css */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f3f4f7, #e1e8f0);
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #007BFF;
+    color: #2c3e50;
     font-size: 2.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .trend {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-.trend h2 {
-    font-size: 1.8rem;
-    color: #333;
-    position: relative;
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
+h2 {
+    color: #34495e;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
 }
 
-.trend h2:hover {
-    color: #007BFF;
-    transform: scale(1.05);
+p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
-.trend p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    transition: color 0.3s ease;
+.trend:nth-child(odd) {
+    background-color: #f9fafb;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.trend p:hover {
-    color: #007BFF;
-}
-
-.trend h2::before {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 4px;
-    background-color: #007BFF;
-    bottom: -5px;
-    left: 0;
-    border-radius: 4px;
+.trend:nth-child(even) {
+    background-color: #f3f4f7;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 15px;
+        padding: 20px;
     }
 
     h1 {
         font-size: 2rem;
     }
 
-    .trend h2 {
+    h2 {
         font-size: 1.5rem;
     }
 
-    .trend p {
-        font-size: 0.95rem;
+    p {
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 10px;
-    }
+/* Styling untuk button */
+.btn-kembali {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
 
-    h1 {
-        font-size: 1.8rem;
-    }
+.btn-kembali:hover {
+    background-color: #003d80;
+}
 
-    .trend h2 {
-        font-size: 1.3rem;
-    }
-
-    .trend p {
-        font-size: 0.9rem;
-    }
+/* Center alignment */
+.btn-container {
+    text-align: center;
+    margin-top: 40px;
 }
