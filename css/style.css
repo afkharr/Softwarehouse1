@@ -707,15 +707,17 @@ footer .credit a {
     }
 }
 
-.blog-post {
-    flex: 1 1 100%;
+.blog-posts {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
 }
 
-.job-listing {
-    flex: 1 1 100%;
-    /* Mengatur item untuk mengisi seluruh lebar pada perangkat kecil */
-    margin: 0;
-    /* Menghapus margin pada perangkat kecil */
+.blog-post {
+    flex: 0 0 80%;
+    /* Adjust the card width for mobile */
+    min-width: 80%;
+    /* Ensure each card takes 80% of the width */
 }
 
 /* Mobile */
@@ -990,11 +992,8 @@ footer .credit a {
 /* Blog Section Styles */
 .blog {
     padding: 2rem 5%;
-    /* Padding disesuaikan dengan bagian lainnya */
     background-color: var(--bg-blog);
     transition: background-color 0.3s ease;
-
-    /* Menggunakan warna latar belakang dari root */
 }
 
 .section-title {
@@ -1002,7 +1001,6 @@ footer .credit a {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: var(--primary);
-    /* Menggunakan warna utama */
 }
 
 .blog-posts {
@@ -1013,47 +1011,38 @@ footer .credit a {
 }
 
 .blog-post {
-    flex: 1 1 calc(50% - 1.5rem);
-    /* Ukuran responsif */
+    flex: 1 1 calc(33% - 1.5rem); /* Ukuran card diubah untuk 3 kolom */
     background-color: var(--bg-blog-post-gradient);
-    /* Gradient background */
     border: var(--border-blog-post);
-    /* Border yang lebih gelap */
     border-radius: 12px;
-    /* Sudut yang lebih melengkung */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    padding: 1rem;
+    padding: 1.5rem;
+    max-width: 350px; /* Batas maksimal lebar card */
 }
 
 .blog-post:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    /* Bayangan lebih dalam pada hover */
 }
 
 .blog-post img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Gambar full width dari card */
+    height: 200px; /* Ketinggian gambar diatur */
     object-fit: cover;
     border-bottom: 1px solid #444;
-    /* Pembatas antara gambar dan teks */
 }
 
 .blog-post h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 1rem 0.5rem;
-    /* Margin atas dan bawah */
     color: var(--primary);
-    /* Warna judul sesuai tema */
 }
 
 .blog-post p {
     margin: 0 0.5rem 1rem;
-    /* Margin bawah lebih besar */
     color: var(--color-p-blog-post);
-    /* Warna teks */
 }
 
 .read-more {
@@ -1061,27 +1050,19 @@ footer .credit a {
     text-align: center;
     padding: 0.5rem 1rem;
     margin: 0 auto;
-    /* Tengah otomatis */
     background: var(--primary);
-    /* Warna latar belakang tombol */
     color: var(--text-light);
-    /* Warna teks tombol */
     text-decoration: none;
     border-radius: 8px;
-    /* Sudut lebih melengkung */
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .read-more:hover {
     background: var(--primary-dark);
-    /* Warna latar belakang saat hover */
     transform: translateY(-2px);
-    /* Sedikit angkat pada hover */
     text-decoration: none;
-    /* Menghilangkan garis bawah saat hover */
 }
-
 /* Careers Section Styles */
 .careers {
     padding: 2rem 10%;
